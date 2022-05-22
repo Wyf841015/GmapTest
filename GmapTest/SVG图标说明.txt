@@ -1,0 +1,20 @@
+﻿<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="1">
+<g  id="svgpropert" transform="rotate(0,24,24)" transform-box="fill-box" stroke="red" fill="none" opacity="1">
+<path d="M6 24C6 22.8954 6.89543 22 8 22H40C41.1046 22 42 22.8954 42 24V30H6V24Z" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 30V44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29 30V44"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 4C16.268 4 10 10.268 10 18V22H38V18C38 10.268 31.732 4 24 4Z" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="24" cy="13" r="3" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+
+
+以上为典型图标
+规则：
+1.需用<g>将图标主体描述</g>，其中：
+ID必须为"svgpropert"，作为程序内部识别要素；
+stroke为线条颜色，需跟随程序变动颜色的内部要素不能再有stroke要素（如内部线条需制定为其他颜色，在内部要素内直接增加stroke）；
+transform="rotate(0,24,24)" transform-box="fill-box"，标记要素旋转0为旋转角度，24,24是图标中心点，程序内已内部计算中心点
+fill="none" 为填充色，具体参考stroke，marker需要程序控制填充的要素，内部需要删除fill要素
+opacity="1"透明度，0-1
